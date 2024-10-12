@@ -2,7 +2,7 @@
 import {NavLink } from "react-router-dom";
 const Header = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-black text-white py-4 px-4 md:px-6 fixed top-0 w-full z-40 opacity-90">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,25 +24,31 @@ const Header = () => {
             <li><a>Item 3</a></li>
           </ul>
         </div>
-        <NavLink to={"/"} style={({ isActive }) => ({ color: isActive ? "red" : "inherit" })} className="btn btn-ghost text-xl">daisyUI</NavLink>
+        <div className="hidden md:block leading-8">
+            <h3 className="text-[24px] md:text-[32px] font-black">BISTRO BOSS</h3>
+            <h4 className="text-lg md:text-2xl font-normal tracking-widest">Restaurant</h4>
+        </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <NavLink to="/about" className={({ isActive }) => isActive ? "text-red-900" : "text-gray-900"}>About</NavLink>
+            <NavLink to="/about" className={({ isActive }) => isActive ? "text-white" : "text-gray-900"}>Home</NavLink>
           </li>
           <li>
-            <NavLink to="/about" className={({ isActive }) => isActive ? "text-red-900" : "text-gray-900"}>About</NavLink>
+            <NavLink to="/MenuPage" className={({ isActive }) => isActive ? "text-white" : "text-gray-900"}>Contact Us</NavLink>
           </li>
           <li>
-            <NavLink to="/about" className={({ isActive }) => isActive ? "text-red-900" : "text-gray-900"}>About</NavLink>
+            <NavLink to="/ShopPage" className={({ isActive }) => isActive ? "text-white" : "text-gray-900"}>Dashboard</NavLink>
           </li>
           <li>
-            <NavLink to="/about" className={({ isActive }) => isActive ? "text-red-900" : "text-gray-900"}>About</NavLink>
+            <NavLink to="/about" className={({ isActive }) => isActive ? "text-white" : "text-gray-900"}>Our Menu</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className={({ isActive }) => isActive ? "text-white" : "text-gray-900"}>Our Shop</NavLink>
           </li>
         </ul>
       </div>
-      <div className="navbar-end"><a className="btn">Button</a></div>
+      <div className=""><a className="hidden lg:block text-xl font-extrabold">Sign Out</a></div>
     </div>
   );
 };
