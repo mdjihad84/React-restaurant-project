@@ -1,19 +1,16 @@
 import FooterSection from '../Components/FooterSection';
-
 const Hero = () => {
   return (
     <div className="block">
-      {/* Hero Image */}
-      <div
-        className="w-full h-[300px] sm:h-[300px] md:h-[500px] lg:h-[700px] xl:h-[804px] bg-cover bg-center"
-        style={{ backgroundImage: "url('/Images/Hero3.jpg')" }}
-        aria-label="Hero image"/>
-      
-      {/* Food Image */}
-      <div>
-        <img className="mx-auto mt-2" src="/Images/Food.jpg" alt="Food" />
+     <div className="">
+        <img className="w-full h-[300px] sm:h-[300px] md:h-[500px] lg:h-[700px] xl:h-[804px] bg-cover bg-center" style={{ backgroundImage: "url('/Images/Hero3.jpg')" }} aria-label="Hero image"/>
+        <div className="w-[90%] md:w-[1096px] h-[300px] bg-black mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center z-40 opacity-90 justify-center">
+           <div className="w-[90%] md:w-[740px] text-center">
+              <h2 className="text-white mt-4 font-enter text-[88px]">OUR SHOP</h2>
+              <p className="text-white mt-4 font-enter text-xl" >Would you like to try a dish?</p>
+           </div>
+        </div>
       </div>
-
       {/* Chef Recommends Section */}
       <div>
         <p className="text-center text-xl font-normal italic text-[#D99904] mt-20">---Should Try---</p>
@@ -41,11 +38,8 @@ const Hero = () => {
           </div>
         ))}
       </div>
-
-      {/* Footer */}
       <FooterSection />
     </div>
   );
 };
-
 export default Hero;

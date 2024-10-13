@@ -1,17 +1,23 @@
 const Menu = () => {
   return (
-    <section className="block">
-      <img className="w-full h-[300px] sm:h-[300px] md:h-[500px] lg:h-[700px] xl:h-[804px] bg-cover bg-center" style={{ backgroundImage: "url('/Images/Hero2.jpg')" }} aria-label="Hero image"/>
+    <div className="block">
+      <div className="">
+        <img className="w-full h-[300px] sm:h-[300px] md:h-[500px] lg:h-[700px] xl:h-[804px] bg-cover bg-center" style={{ backgroundImage: "url('/Images/Hero2.jpg')" }} aria-label="Hero image"/>
+        <div className="w-[90%] md:w-[1096px] h-[300px] bg-black mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center z-40 opacity-90 justify-center">
+           <div className="w-[90%] md:w-[740px] text-center">
+              <h2 className="text-white mt-4 font-enter text-[88px]">OUR MENU</h2>
+              <p className="text-white mt-4 font-enter text-xl" >Would you like to try a dish?</p>
+           </div>
+        </div>
+      </div>
       <img className="mx-auto mt-2" src="/Images/Food.jpg" alt="Delicious Food" loading="lazy" />
       <div className="px-4 sm:px-0">
-        <header>
-          <p className="text-center text-lg sm:text-xl font-normal italic text-[#D99904] mt-10 sm:mt-20">
-            ---Check it out---
-          </p>
+        <div>
+          <p className="text-center text-lg sm:text-xl font-normal italic text-[#D99904] mt-10 sm:mt-20">---Check it out---</p>
           <hr className="w-[90%] sm:w-[424px] h-[4px] mx-auto mt-4 sm:mt-8 mb-2 sm:mb-4 bg-[#E8E8E8]" />
           <h2 className="text-center text-2xl sm:text-4xl text-black">FROM OUR MEN</h2>
           <hr className="w-[90%] sm:w-[424px] h-[4px] mx-auto mt-6 sm:mt-10 mb-4 sm:mb-8 bg-[#E8E8E8]" />
-        </header>
+        </div>
 
         <div className="flex flex-col lg:flex-row lg:flex-wrap justify-center">
           {[...Array(4)].map((_, index) => (
@@ -33,7 +39,7 @@ const Menu = () => {
 
       {/* Footer */}
       <Footer />
-    </section>
+    </div>
   );
 };
 
