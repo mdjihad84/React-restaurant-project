@@ -54,7 +54,7 @@ const Header = () => {
       </div>
       <img src="/Images/Header.png" alt="Icon" className="hidden lg:block w-6 h-6 md:w-8 md:h-8" />
       <div className="">
-        <NavLink to="/SignOut" className={({ isActive }) => `${isActive ? "text-yellow-400" : "text-gray-900"} text-white font-normal text-xl hidden lg:block text-xl font-extrabold ml-[20px] w-[115px]`}>Sign Out</NavLink>
+        <NavLink to="/SignUp" className={({ isActive }) => `${isActive ? "text-yellow-400" : "text-gray-900"} text-white font-normal text-xl hidden lg:block text-xl font-extrabold ml-[20px] w-[115px]`}>Sign Out</NavLink>
         <i className="fa-solid fa-user text-lg md:text-xl hidden lg:block"></i>
       </div>
     </div>

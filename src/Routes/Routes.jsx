@@ -5,7 +5,7 @@ import ContactPage from "../Pages/ContactPage";
 import LoginPage from "../Pages/LoginPage";
 import MenuPage from "../Pages/MenuPage";
 import ShopPage from "../Pages/ShopPage";
-import SignOut from "../Pages/SignOut";
+import SignUp from "../Pages/SignUp";
 
 export const router = createBrowserRouter([
   {
@@ -33,8 +33,8 @@ export const router = createBrowserRouter([
         element: <ShopPage/>,
       },
       {
-        path: "/SignOut",
-        element: <SignOut/>,
+        path: "/SignUp",
+        element: <SignUp/>,
       },
     ],
   },
