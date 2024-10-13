@@ -1,11 +1,11 @@
 const Menu = () => {
   return (
     <div className="block">
-      <div className="">
+      <div>
         <img className="w-full h-[300px] sm:h-[300px] md:h-[500px] lg:h-[700px] xl:h-[804px] bg-cover bg-center" style={{ backgroundImage: "url('/Images/Hero2.jpg')" }} aria-label="Hero image"/>
         <div className="w-[90%] md:w-[1096px] h-[300px] bg-black mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center z-40 opacity-90 justify-center">
            <div className="w-[90%] md:w-[740px] text-center">
-              <h2 className="text-white mt-4 font-enter text-[88px]">OUR MENU</h2>
+              <h2 className="text-white mt-4 font-enter text-[32px] sm:text-[56px] md:text-[88px]">OUR MENU</h2>
               <p className="text-white mt-4 font-enter text-xl" >Would you like to try a dish?</p>
            </div>
         </div>
@@ -25,11 +25,9 @@ const Menu = () => {
           ))}
         </div>
 
-        <footer>
-          <h4 className="text-center text-lg sm:text-xl text-[#1F2937] font-normal mt-4">
-            View Full Menu
-          </h4>
-        </footer>
+        <div>
+          <h4 className="text-center text-lg sm:text-xl text-[#1F2937] font-normal mt-4">View Full Menu</h4>
+        </div>
       </div>
 
       {/* Bistro Section */}

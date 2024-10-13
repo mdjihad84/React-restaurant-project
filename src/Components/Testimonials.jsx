@@ -17,14 +17,12 @@ const Testimonials = () => {
             <div className="mt-2">
                 <img src="/Images/Group.png" className="mx-auto max-w-[400px] md:max-w-[600px]" alt="Group-img" />
                 <p className="mx-auto w-full max-w-[920px] text-center mt-4 px-4">
-                    <i className="fa-solid fa-arrow-left text-blue-500 text-xl mr-2"></i>
-                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humor<i className="fa-solid fa-arrow-right text-blue-500 text-xl ml-2"></i> and the like). It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humor and the like). It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                 </p>
                 <h3 className="text-center text-[#CD9003] text-3xl mt-4">JANE DOE</h3>
             </div>
         </div>
     );
 };
-
 export default Testimonials;
 

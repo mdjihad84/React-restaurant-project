@@ -13,7 +13,7 @@ const SignUp= () => {
                     <div className="w-[1140px] h-[725px] shadow-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col md:flex-row items-center justify-center">
                         <div className="flex items-center justify-center min-h-screen">
                             <div className="w-[400px] ml-8 max-w-md p-6 rounded-lg">
-                                <h2 className="text-2xl font-bold text-center text-gray-800">Login</h2>
+                                <h2 className="text-2xl font-bold text-center text-gray-800">SingUp</h2>
                                 <form className="mt-6">
                                     <div className="mb-4">
                                         <label className="block text-sm font-medium text-gray-700" htmlFor="email"> Email</label>
@@ -29,10 +29,10 @@ const SignUp= () => {
                                     <div className="mb-6">
                                         <input type="text" id="text" className="bg-white w-full p-3 mt-1 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Type here" required />
                                     </div>
-                                    <button type="submit" className="bg-[#D1A054B2] w-full p-3 text-white bg-blue-600 rounded-md">Sing in</button>
+                                    <button type="submit" className="bg-[#D1A054B2] w-full p-3 text-white rounded-md">Sign in</button>
                                 </form>
                                 <p className="mt-4 text-sm text-center text-gray-600">Don’t have an account? 
-                                    <a href="/register" className="text-[#D1A054B2] hover:underline"> Sign up </a>
+                                    <a href="/register" className="text-[#D1A054B2] hover:underline">Sign up</a>
                                 </p>
                             </div>
                         </div>

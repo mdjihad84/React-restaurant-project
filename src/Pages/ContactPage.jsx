@@ -4,29 +4,29 @@ const Contact = () => {
             <img src="/Images/Contact-hero.jpg" alt="Product 5" className="w-full" />
             <div className="w-[90%] md:w-[1096px] h-[300px] bg-black mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center z-40 opacity-90 justify-center">
                 <div className="w-[90%] md:w-[740px] text-center">
-                    <h2 className="text-white mt-4 font-enter text-[88px]">CONTACT US</h2>
+                    <h2 className="text-white mt-4 font-enter text-[32px] sm:text-[56px] md:text-[88px]">CONTACT US</h2>
                     <p className="text-white mt-4 font-enter text-xl">Would you like to try a dish?</p>
                 </div>
             </div>
-            <div className="">
+            <div>
                 <div>
                     <p className="text-center text-lg sm:text-xl font-normal italic text-[#D99904] mt-10 sm:mt-20"> ---Check it out---</p>
                     <hr className="w-[90%] sm:w-[424px] h-[4px] mx-auto mt-4 sm:mt-8 mb-2 sm:mb-4 bg-[#E8E8E8]" />
                     <h2 className="text-center text-2xl sm:text-4xl text-black">CONTACT FORM</h2>
                     <hr className="w-[90%] sm:w-[424px] h-[4px] mx-auto mt-6 sm:mt-10 mb-4 sm:mb-8 bg-[#E8E8E8]" />
                 </div>
-                <form action="/" className="bg-[#F3F3F3] w-[60rem] mx-auto p-8 shadow-md rounded-md mt-8 mb-16">
-                    <div className="flex gap-4">
-                        <input type="text" placeholder="Name" className="w-full p-3 border border-gray-300 rounded-md bg-white mt-8" />
-                        <input type="email" placeholder="Email" className="w-full p-3 border border-gray-300 rounded-md bg-white mt-8" />
+                <form action="/" className="bg-[#F3F3F3] w-[90%] sm:w-[60rem] mx-auto p-6 sm:p-8 shadow-md rounded-md mt-8 mb-16">
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <input type="text" placeholder="Name" className="w-full p-3 border border-gray-300 rounded-md bg-white mt-4 sm:mt-0" />
+                        <input type="email" placeholder="Email" className="w-full p-3 border border-gray-300 rounded-md bg-white mt-4 sm:mt-0" />
                     </div>
-                    <input type="email" placeholder="Email" className="w-full p-3 border border-gray-300 rounded-md bg-white mt-8" />
-                    <textarea placeholder="Message" rows="4" className="w-full p-3 border border-gray-300 rounded-md bg-white mt-8"></textarea>
-                    <div className="flex items-center mt-8">
+                    <input type="email" placeholder="Email" className="w-full p-3 border border-gray-300 rounded-md bg-white mt-4" />
+                    <textarea placeholder="Message" rows="4" className="w-full h-[300px] p-3 border border-gray-300 rounded-md bg-white mt-4"></textarea>
+                    <div className="flex items-center mt-4">
                         <input type="checkbox" id="not-a-robot" className="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-0" />
                         <label htmlFor="not-a-robot" className="ml-2 text-gray-700 text-sm">I am not a robot</label>
                     </div>
-                    <div className="flex justify-center mt-8">
+                    <div className="flex justify-center mt-6">
                         <button type="submit" className="bg-[#D1A054B2] w-40 p-3 text-white rounded-md">Sign in</button>
                     </div>
                 </form>

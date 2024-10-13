@@ -10,14 +10,16 @@ import FooterSection from "../Components/FooterSection";
 const Home = () => {
   return (
     <div>
-      <Hero />
-      <ProductSection/>
-      <MenuSection/>
-      <ContactSection/>
-      <ShefSection/>
-      <FromSection/>
-      <Testimonials />
-      <FooterSection/>
+      <>
+        <Hero />
+        <ProductSection/>
+        <MenuSection/>
+        <ContactSection/>
+        <ShefSection/>
+        <FromSection/>
+        <Testimonials />
+        <FooterSection/>
+      </>
     </div>
   );
 };
