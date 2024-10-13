@@ -1,3 +1,4 @@
+
 const Contact = () => {
     return (
         <div className="bg-black mx-auto pt-20 pb-20 mt-16 w-full max-w-[1100px] px-4">

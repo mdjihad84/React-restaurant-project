@@ -1,5 +1,5 @@
+import { NavLink } from "react-router-dom";
 
-import {NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div className="navbar bg-black text-white py-4 px-4 md:px-6 fixed top-0 w-full z-40 opacity-90">
@@ -10,7 +10,7 @@ const Header = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
-          <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
             <li>
               <NavLink to="/" className={({ isActive }) => `${isActive ? "text-yellow-400" : "text-gray-900"} text-white font-normal text-xl`}>Home</NavLink>
             </li>
@@ -29,8 +29,8 @@ const Header = () => {
           </ul>
         </div>
         <div className="hidden md:block leading-8">
-            <h3 className="text-[24px] md:text-[32px] font-black">BISTRO BOSS</h3>
-            <h4 className="text-lg md:text-2xl font-normal tracking-widest">Restaurant</h4>
+          <h3 className="text-[24px] md:text-[32px] font-black">BISTRO BOSS</h3>
+          <h4 className="text-lg md:text-2xl font-normal tracking-widest">Restaurant</h4>
         </div>
       </div>
       <div className="navbar-end hidden lg:flex">
@@ -53,12 +53,12 @@ const Header = () => {
         </ul>
       </div>
       <img src="/Images/Header.png" alt="Icon" className="hidden lg:block w-6 h-6 md:w-8 md:h-8" />
-      <div className="">
-        <NavLink to="/SignUp" className={({ isActive }) => `${isActive ? "text-yellow-400" : "text-gray-900"} text-white font-normal text-xl hidden lg:block text-xl font-extrabold ml-[20px] w-[115px]`}>Sign Out</NavLink>
+      <div className="flex items-center space-x-4">
+        <NavLink to="/SignUp" className={({ isActive }) => `${isActive ? "text-yellow-400" : "text-gray-900"} text-white font-extrabold hidden lg:block w-[115px]`}>Sign Out</NavLink>
         <i className="fa-solid fa-user text-lg md:text-xl hidden lg:block"></i>
       </div>
     </div>
   );
 };
-
 export default Header;
+

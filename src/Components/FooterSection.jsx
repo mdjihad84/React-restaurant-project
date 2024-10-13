@@ -1,3 +1,4 @@
+
 const Footer = () => {
     return (
         <div className="flex flex-col md:flex-row justify-evenly mt-6 space-y-6 md:space-y-0">
@@ -8,7 +9,7 @@ const Footer = () => {
                 <p className="text-base md:text-xl mb-2">Mon - Fri: 08:00 - 22:00</p>
                 <p className="text-base md:text-xl mb-2">Sat - Sun: 10:00 - 23:00</p>
             </div>
-
+            
             <div className="bg-black py-10 text-white text-center py-6 pt-20 py-6 w-full md:w-1/2">
                 <h3 className="text-2xl md:text-3xl mb-2">Follow Us</h3>
                 <p className="mb-4 text-base md:text-xl">Join us on social media</p>

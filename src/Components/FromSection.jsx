@@ -22,9 +22,7 @@ const Form = () => {
                                 Deserunt magni aperiam dolor eius dolore at, nihil iusto ducimus incidunt
                                 quibusdam nemo.
                             </p>
-                            <button className="btn mt-3 sm:mt-4 border-none bg-transparent text-xs sm:text-sm md:text-base lg:text-xl text-white border border-2 border-solid">
-                                Read More
-                            </button>
+                            <button className="btn mt-3 sm:mt-4 border-none bg-transparent text-xs sm:text-sm md:text-base lg:text-xl text-white border border-2 border-solid">Read More</button>
                         </div>
                     </div>
                 </div>
