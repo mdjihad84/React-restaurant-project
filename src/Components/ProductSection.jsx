@@ -12,10 +12,10 @@ const Product = () => {
             </div>
             <div className="w-full md:w-[1320px] mx-auto mt-20 relative mb-20">
                 <img src="/Images/Product-img5.jpg" alt="Product 5" className="w-full h-auto" />
-                <div className="w-[90%] md:w-[1096px] h-[300px] bg-white mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+                <div className="w-[90%] md:w-[1096px] h-[300px] bg-black mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center z-40 opacity-90 justify-center">
                     <div className="w-[90%] md:w-[740px] text-center">
-                        <h3 className="text-4xl font-normal text-black">Bistro Boss</h3>
-                        <p className="text-black mt-4 font-enter">
+                        <h3 className="text-4xl font-normal text-white">Bistro Boss</h3>
+                        <p className="text-white mt-4 font-enter">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
                             libero accusamus laborum deserunt ratione dolor officiis praesentium!
                             Deserunt magni aperiam dolor eius dolore at, nihil iusto ducimus incidunt
