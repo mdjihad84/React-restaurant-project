@@ -12,16 +12,20 @@ const Header = () => {
           </div>
           <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
             <li>
-              <NavLink to={"/about"} style={({ isActive }) => ({ color: isActive ? "red" : "inherit" })}>About</NavLink>
+              <NavLink to="/" className={({ isActive }) => isActive ? "text-yellow-400" : "text-gray-900"}>Home</NavLink>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
+              <NavLink to="/MenuPage" className={({ isActive }) => isActive ? "text-yellow-400" : "text-gray-900"}>Contact Us</NavLink>
             </li>
-            <li><a>Item 3</a></li>
+            <li>
+              <NavLink to="/ShopPage" className={({ isActive }) => isActive ? "text-yellow-400" : "text-gray-900"}>Dashboard</NavLink>
+            </li>
+            <li>
+              <NavLink to="" className={({ isActive }) => isActive ? "text-yellow-400" : "text-gray-900"}>Our Menu</NavLink>
+            </li>
+            <li>
+              <NavLink to="" className={({ isActive }) => isActive ? "text-yellow-400" : "text-gray-900"}>Our Shop</NavLink>
+            </li>
           </ul>
         </div>
         <div className="hidden md:block leading-8">
@@ -32,23 +36,27 @@ const Header = () => {
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <NavLink to="/about" className={({ isActive }) => isActive ? "text-white" : "text-gray-900"}>Home</NavLink>
+            <NavLink to="/" className={({ isActive }) => `${isActive ? "text-yellow-400" : "text-gray-900"} text-white font-normal text-xl`}>Home</NavLink>
           </li>
           <li>
-            <NavLink to="/MenuPage" className={({ isActive }) => isActive ? "text-white" : "text-gray-900"}>Contact Us</NavLink>
+            <NavLink to="/MenuPage" className={({ isActive }) => `${isActive ? "text-yellow-400" : "text-gray-900"} text-white font-normal text-xl`}>Contact Us</NavLink>
           </li>
           <li>
-            <NavLink to="/ShopPage" className={({ isActive }) => isActive ? "text-white" : "text-gray-900"}>Dashboard</NavLink>
+            <NavLink to="/ShopPage" className={({ isActive }) => `${isActive ? "text-yellow-400" : "text-gray-900"} text-white font-normal text-xl`}>Dashboard</NavLink>
           </li>
           <li>
-            <NavLink to="/about" className={({ isActive }) => isActive ? "text-white" : "text-gray-900"}>Our Menu</NavLink>
+            <NavLink to="" className={({ isActive }) => `${isActive ? "text-yellow-400" : "text-gray-900"} text-white font-normal text-xl`}>Our Menu</NavLink>
           </li>
           <li>
-            <NavLink to="/about" className={({ isActive }) => isActive ? "text-white" : "text-gray-900"}>Our Shop</NavLink>
+            <NavLink to="" className={({ isActive }) => `${isActive ? "text-yellow-400" : "text-gray-900"} text-white font-normal text-xl`}>Our Shop</NavLink>
           </li>
         </ul>
       </div>
-      <div className=""><a className="hidden lg:block text-xl font-extrabold">Sign Out</a></div>
+      <img src="/Images/Header.png" alt="Icon" className="hidden lg:block w-6 h-6 md:w-8 md:h-8" />
+      <div className="">
+        <a className="hidden lg:block text-xl font-extrabold ml-[20px] w-[115px]">Sign Out</a>
+        <i className="fa-solid fa-user text-lg md:text-xl hidden lg:block"></i>
+      </div>
     </div>
   );
 };
